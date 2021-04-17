@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded',()=>{
+    let name = document.getElementById('name');
+    let fon = document.body;
+
+    let input = document.getElementById('inText');
+    let btnName = document.getElementById('btnName');
+    let btnFon = document.getElementById('fon');
+
+btnName.addEventListener('click',()=>{
+    console.log(input.value);
+    name.innerText = input.value;
+});
+btnFon.addEventListener('click',()=>{
+fon.style.backgroundColor = 'Blue';
+})
+
+    })
+  
+
+</script>
+<body>
+<h1>Резюме</h1>
+
+<img src="https://cdn.fishki.net/upload/post/2016/04/29/1936190/photo-koaly-03.jpg" alt="коалка ползет, перезагрузите страницу" width="500" >
+    <div class="info">
+        <p id="name">Копылов Эдуард</p>
+        <input type="text" id="inText"> <button type="button" id="btnName">изменить имя</button>
+        <button type="button" id="fon">изменить фон</button>
+    </div>
+
+    <br/>
+    
+    <div class="learn">
+        <h1>Конспект курса</h1>
+        <p class="learned-ok">Парные теги.</p>
+   <p class="learned-ok">Одиночные теги.</p>
+   <p class="learned-ok">Атрибуты тегов.</p>
+   <p class="learned-ok">Инлайновые (встроенные) стили.</p>
+   <p class="learning-in-progress">Внешние стили.</p>
+   <p class="not-learned">Стилизация по классам.</p>
+    </div>
+   
+   </body>
+   <style>
+    body {
+    font-family: Tahoma, serif;
+    border: 2px solid brown;
+    }
+    .info{
+        text-align: center;
+    }
+    h1 {
+    color: #999999;
+    font-size: 30px;
+    text-align: center;
+    }
+    h1:hover{
+        color:darkblue;
+    }
+    .learned-ok {
+    color: green;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    }
+    .learning-in-progress {
+    color: orange;
+    }
+    .not-learned {
+    color: red;
+    }
+    .learn{
+        text-align: center;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+    </style>
+    
+</html>
