@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.ejin.ru/wp-content/uploads/2017/09/7-667.jpg');
+    background-position:  center center;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+.rainbow{
+    position: relative;
+    margin: 55px auto;
+    width: 100%;
+
+}
+
+.rainbow tr{
+    height: 100px;
+    
+}
+
+.rainbow tr td{
+    border: 1px solid black;
+    width: 100px;
+    border-radius: 4px;
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    
+}
+
+.wrap-table{
+    width: 50%;
+}
+
+.button{
+    width: 50%;
+    font-size: 1.2em;
+    padding: 15px;
+    border-top: none;
+    border-left: none;
+    border-radius: 7px;
+    outline: none;
+    background-color: indigo;
+    color: yellow;
+    border-bottom: 6px solid rgb(50, 2, 85);
+    border-right: 6px solid rgb(50, 2, 85);
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.button:hover{
+    background-color: rgb(102, 12, 167);
+}
+
+.controls{
+    width: 25%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
